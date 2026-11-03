@@ -1,0 +1,38 @@
+{
+  "cn": {
+    "001_iqiyi": "爱奇艺",
+    "002_tencent_video": "腾讯视频",
+    "003_youku": "优酷",
+    "004_bilibili": "哔哩哔哩",
+    "005_mango_tv": "芒果TV",
+    "006_xigua_video": "西瓜视频",
+    "007_douyin": "抖音",
+    "008_kuaishou": "快手",
+    "009_migu_video": "咪咕视频",
+    "010_sohu_video": "搜狐视频",
+    "011_yangshipin": "央视频",
+    "012_acfun": "AcFun",
+    "013_weishi": "微视",
+    "014_haokan": "好看视频",
+    "015_letv": "乐视视频",
+    "016_pptv": "PPTV聚力"
+  },
+  "en": {
+    "001_iqiyi": "iQIYI",
+    "002_tencent_video": "Tencent Video",
+    "003_youku": "Youku",
+    "004_bilibili": "Bilibili",
+    "005_mango_tv": "Mango TV",
+    "006_xigua_video": "Xigua Video",
+    "007_douyin": "Douyin",
+    "008_kuaishou": "Kuaishou",
+    "009_migu_video": "Migu Video",
+    "010_sohu_video": "Sohu Video",
+    "011_yangshipin": "Yangshipin",
+    "012_acfun": "AcFun",
+    "013_weishi": "Weishi",
+    "014_haokan": "Haokan",
+    "015_letv": "LeTV",
+    "016_pptv": "PPTV"
+  }
+}

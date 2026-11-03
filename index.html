@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CN Video Logo 预览</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 20px; font: 15px/1.5 -apple-system, "PingFang SC", sans-serif;
+         background: #f5f5f7; color: #1d1d1f; }
+  @media (prefers-color-scheme: dark) { body { background: #000; color: #f5f5f7; }
+    .card { background: #1c1c1e !important; } .logo { background: #2c2c2e !important; } }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: #86868b; font-size: 13px; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
+  .card { background: #fff; border-radius: 14px; padding: 12px; text-align: center;
+          box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .logo { width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+          background: #fafafa; border-radius: 10px; overflow: hidden; }
+  .logo img { max-width: 88%; max-height: 88%; object-fit: contain; }
+  .name { font-size: 12px; margin-top: 8px; font-weight: 600; }
+  .slug { font-size: 10px; color: #86868b; font-family: ui-monospace, monospace; word-break: break-all; }
+  .bar { display: flex; gap: 10px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+  button { font: inherit; padding: 6px 14px; border-radius: 8px; border: 1px solid #d2d2d7;
+           background: #fff; cursor: pointer; }
+  #status { font-size: 12px; color: #86868b; }
+</style>
+</head>
+<body>
+<h1>CN Video Logo</h1>
+<div class="sub">国内主流视频平台图标集 · 1024×1024 RGBA PNG</div>
+<div class="bar">
+  <button id="copy">复制 Logo.json 内容</button>
+  <span id="status">加载中…</span>
+</div>
+<div class="grid" id="grid"></div>
+<script>
+let DATA = null;
+const grid = document.getElementById('grid');
+const status = document.getElementById('status');
+
+fetch('Logo.json').then(r => r.json()).then(d => {
+  DATA = d;
+  status.textContent = `${d.icons.length} 个图标 · ${d.name}`;
+  d.icons.forEach(it => {
+    const el = document.createElement('div');
+    el.className = 'card';
+    el.innerHTML = `<div class="logo"><img loading="lazy" alt="${it.label}" src="${it.url.replace(/^https:\/\/raw\.githubusercontent\.com\/[^/]+\/[^/]+\/main\//, './')}"></div>
+      <div class="name">${it.label || it.name}</div><div class="slug">${it.name}</div>`;
+    grid.appendChild(el);
+  });
+}).catch(e => status.textContent = '读取 Logo.json 失败: ' + e.message);
+
+document.getElementById('copy').onclick = async () => {
+  if (!DATA) return;
+  await navigator.clipboard.writeText(JSON.stringify(DATA, null, 2));
+  status.textContent = '已复制 ✓';
+};
+</script>
+</body>
+</html>

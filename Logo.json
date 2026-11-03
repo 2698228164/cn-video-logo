@@ -1,0 +1,86 @@
+{
+  "name": "CN_Video_Logo",
+  "description": "国内主流视频平台图标集",
+  "icons": [
+    {
+      "name": "001_iqiyi",
+      "label": "爱奇艺",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/001_iqiyi.png"
+    },
+    {
+      "name": "002_tencent_video",
+      "label": "腾讯视频",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/002_tencent_video.png"
+    },
+    {
+      "name": "003_youku",
+      "label": "优酷",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/003_youku.png"
+    },
+    {
+      "name": "004_bilibili",
+      "label": "哔哩哔哩",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/004_bilibili.png"
+    },
+    {
+      "name": "005_mango_tv",
+      "label": "芒果TV",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/005_mango_tv.png"
+    },
+    {
+      "name": "006_xigua_video",
+      "label": "西瓜视频",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/006_xigua_video.png"
+    },
+    {
+      "name": "007_douyin",
+      "label": "抖音",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/007_douyin.png"
+    },
+    {
+      "name": "008_kuaishou",
+      "label": "快手",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/008_kuaishou.png"
+    },
+    {
+      "name": "009_migu_video",
+      "label": "咪咕视频",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/009_migu_video.png"
+    },
+    {
+      "name": "010_sohu_video",
+      "label": "搜狐视频",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/010_sohu_video.png"
+    },
+    {
+      "name": "011_yangshipin",
+      "label": "央视频",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/011_yangshipin.png"
+    },
+    {
+      "name": "012_acfun",
+      "label": "AcFun",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/012_acfun.png"
+    },
+    {
+      "name": "013_weishi",
+      "label": "微视",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/013_weishi.png"
+    },
+    {
+      "name": "014_haokan",
+      "label": "好看视频",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/014_haokan.png"
+    },
+    {
+      "name": "015_letv",
+      "label": "乐视视频",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/015_letv.png"
+    },
+    {
+      "name": "016_pptv",
+      "label": "PPTV聚力",
+      "url": "https://raw.githubusercontent.com/YOUR_NAME/cn-video-logo/main/icon/016_pptv.png"
+    }
+  ]
+}

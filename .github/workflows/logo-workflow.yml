@@ -1,0 +1,47 @@
+name: CN Video Logo Workflow
+
+on:
+  push:
+    paths:
+      - 'icon/**'
+  pull_request:
+    paths:
+      - 'icon/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate_json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate Logo.json
+        run: python .github/scripts/generate_logo_json.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: logo-json
+          path: ${{ github.workspace }}/Logo.json
+
+      - name: Push updated Logo.json
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add Logo.json
+          git diff --cached --quiet || git commit -m "chore: 自动更新视频平台图标清单"
+          git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

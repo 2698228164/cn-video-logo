@@ -1,0 +1,118 @@
+{
+  "name": "CN_Video_Logo",
+  "description": "国内主流视频平台图标集",
+  "icons": [
+    {
+      "name": "001_iqiyi",
+      "cn": "爱奇艺",
+      "en": "iQIYI",
+      "file": "icon/001_iqiyi.png",
+      "src": "wiki"
+    },
+    {
+      "name": "002_tencent_video",
+      "cn": "腾讯视频",
+      "en": "Tencent Video",
+      "file": "icon/002_tencent_video.png",
+      "src": "wiki"
+    },
+    {
+      "name": "003_youku",
+      "cn": "优酷",
+      "en": "Youku",
+      "file": "icon/003_youku.png",
+      "src": "wiki"
+    },
+    {
+      "name": "004_bilibili",
+      "cn": "哔哩哔哩",
+      "en": "Bilibili",
+      "file": "icon/004_bilibili.png",
+      "src": "wiki"
+    },
+    {
+      "name": "005_mango_tv",
+      "cn": "芒果TV",
+      "en": "Mango TV",
+      "file": "icon/005_mango_tv.png",
+      "src": "wiki"
+    },
+    {
+      "name": "006_xigua_video",
+      "cn": "西瓜视频",
+      "en": "Xigua Video",
+      "file": "icon/006_xigua_video.png",
+      "src": "wiki"
+    },
+    {
+      "name": "007_douyin",
+      "cn": "抖音",
+      "en": "Douyin",
+      "file": "icon/007_douyin.png",
+      "src": "wiki"
+    },
+    {
+      "name": "008_kuaishou",
+      "cn": "快手",
+      "en": "Kuaishou",
+      "file": "icon/008_kuaishou.png",
+      "src": "wiki"
+    },
+    {
+      "name": "009_migu_video",
+      "cn": "咪咕视频",
+      "en": "Migu Video",
+      "file": "icon/009_migu_video.png",
+      "src": "appstore"
+    },
+    {
+      "name": "010_sohu_video",
+      "cn": "搜狐视频",
+      "en": "Sohu Video",
+      "file": "icon/010_sohu_video.png",
+      "src": "wiki"
+    },
+    {
+      "name": "011_yangshipin",
+      "cn": "央视频",
+      "en": "Yangshipin",
+      "file": "icon/011_yangshipin.png",
+      "src": "appstore"
+    },
+    {
+      "name": "012_acfun",
+      "cn": "AcFun",
+      "en": "AcFun",
+      "file": "icon/012_acfun.png",
+      "src": "wiki"
+    },
+    {
+      "name": "013_weishi",
+      "cn": "微视",
+      "en": "Weishi",
+      "file": "icon/013_weishi.png",
+      "src": "appstore"
+    },
+    {
+      "name": "014_haokan",
+      "cn": "好看视频",
+      "en": "Haokan",
+      "file": "icon/014_haokan.png",
+      "src": "appstore"
+    },
+    {
+      "name": "015_letv",
+      "cn": "乐视视频",
+      "en": "LeTV",
+      "file": "icon/015_letv.png",
+      "src": "wiki"
+    },
+    {
+      "name": "016_pptv",
+      "cn": "PPTV聚力",
+      "en": "PPTV",
+      "file": "icon/016_pptv.png",
+      "src": "wiki"
+    }
+  ]
+}
